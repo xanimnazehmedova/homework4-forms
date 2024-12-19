@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        background-color: rgb(180, 179, 179);
+        border: 1px solid;
+        text-align: center;
+        width: 500px;
+      }
+      button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <div>
+        <form
+          action="textşphp"
+          method="get"
+          enctype="multipart/form-data"
+          id="qeydiyyatformu"
+        >
+          <label for="ad" name="name"> Adınız </label>
+          <input
+            id="ad"
+            type="text"
+            name="name"
+            minlength="3"
+            placeholder="Enter name"
+            required
+          />
+
+          <br /><br />
+
+          <label for="soyad" name="surname"> Soyadınız </label>
+          <input
+            id="soyad"
+            type="text"
+            name="surname"
+            minlength="3"
+            placeholder="Enter surname"
+            required
+          />
+          <br /><br />
+
+          <label for="yas" name="age"> Yaşınız </label>
+          <input
+            id="yas"
+            type="number"
+            name="age"
+            min="3"
+            max="99"
+            placeholder="3-99"
+          />
+          <br />
+          <br />
+          <br />
+          <label for="email" name="email"> Emailinizi daxil edin</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter Gmail"
+            required
+          />
+          <br />
+          <br />
+          <label for="password" name="password">
+            Emailinizin kodunu daxil edin</label
+          >
+          <input
+            id="password"
+            type="password"
+            name="password"
+            minlength="7"
+            placeholder="Enter password"
+            required
+          />
+          <br />
+          <br />
+          <br />
+          <br />
+          <label for="dogum" name="birth"> Doğum tarixinizi seçin</label>
+          <input id="dogum" type="date" name="birth" />
+          <br />
+          <br />
+          <label for="gender" name="gender"> Cinsiyyətinizi seçin</label>
+          <br />
+          <br />
+          <label for="male" name="gender"> Kişi</label>
+          <input id="male" type="radio" name="gender" required />
+          <br />
+          <label for="female" name="gender"> Qadın</label>
+          <input id="female" type="radio" name="gender" required />
+          <br />
+          <br />
+          <br />
+          <br />
+          <label for="file" name="files">
+            CV (PDF formatında) və şəklinizi daxil edin</label
+          >
+          <br />
+          <br />
+          <label for="cv" name="files"></label>
+          <input id="cv" type="file" name="files" accept=" .pdf" />
+          <br />
+          <br />
+          <label for="photo" name="files"></label>
+          <input id="photo" type="file" name="files" accept=" .jpeg, .png" />
+          <br />
+          <br />
+          <br />
+          <br />
+          <label for="rulesandtermsofuse" name="rulesandtermsofuse">
+            <a href=""> Qaydalar və İstifadə şərtləri</a> ilə tanış oldum,
+            razıyam</label
+          >
+          <input
+            id="rulesandtermsofuse"
+            type="checkbox"
+            name="rulesandtermsofuse"
+            required
+          />
+          <br />
+        </form>
+      </div>
+      <br /><br />
+      <div>
+        <button type="submit" form="qeydiyyatformu">Göndər</button>
+        <button type="reset" form="qeydiyyatformu">Təmizlə</button>
+      </div>
+    </div>
+  </body>
+</html>
