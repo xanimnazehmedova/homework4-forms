@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title> Qeydiyyat formu</title>
     <style>
-      #div1 {
+      .div1 {
         background-color: rgb(180, 179, 179);
         border: 1px solid;
         text-align: center;
@@ -20,7 +20,7 @@
     </style>
   </head>
   <body>
-    <div id="div1">
+    <div class="div1">
       <h1>Qeydiyyat Formu</h1>
       <div>
         <form
@@ -29,9 +29,9 @@
           enctype="multipart/form-data"
           id="qeydiyyatformu"
         >
-          <label for="ad" name="name"> Adınız </label>
+          <label for="name" > Adınız </label>
           <input
-            id="ad"
+            id="name"
             type="text"
             name="name"
             minlength="3"
@@ -41,9 +41,9 @@
 
           <br /><br />
 
-          <label for="soyad" name="surname"> Soyadınız </label>
+          <label for="surname" > Soyadınız </label>
           <input
-            id="soyad"
+            id="surname"
             type="text"
             name="surname"
             minlength="3"
@@ -52,9 +52,9 @@
           />
           <br /><br />
 
-          <label for="yas" name="age"> Yaşınız </label>
+          <label for="age" > Yaşınız </label>
           <input
-            id="yas"
+            id="age"
             type="number"
             name="age"
             min="3"
@@ -64,7 +64,7 @@
           <br />
           <br />
           <br />
-          <label for="email" name="email"> Emailinizi daxil edin</label>
+          <label for="email" > Emailinizi daxil edin</label>
           <input
             id="email"
             type="email"
@@ -74,7 +74,7 @@
           />
           <br />
           <br />
-          <label for="password" name="password">
+          <label for="password" >
             Emailinizin kodunu daxil edin</label
           >
           <input
@@ -89,38 +89,38 @@
           <br />
           <br />
           <br />
-          <label for="dogum" name="birth"> Doğum tarixinizi seçin</label>
-          <input id="dogum" type="date" name="birth" />
+          <label for="birth" > Doğum tarixinizi seçin</label>
+          <input id="birth" type="date" name="birth" />
           <br />
           <br />
-          <label for="gender" name="gender"> Cinsiyyətinizi seçin</label>
+          <label for="gender" > Cinsiyyətinizi seçin</label>
           <br />
           <br />
-          <label for="male" name="gender"> Kişi</label>
+          <label for="male" > Kişi</label>
           <input id="male" type="radio" name="gender" value="1" required />
           <br />
-          <label for="female" name="gender"> Qadın</label>
+          <label for="female" > Qadın</label>
           <input id="female" type="radio" name="gender" value="2" required />
           <br />
           <br />
           <br />
           <br />
-          <label for="file" name="files">
+          <label for="file" >
             CV (PDF formatında) və şəklinizi daxil edin</label
           >
           <br />
           <br />
-          <label for="cv" name="files"></label>
-          <input id="cv" type="file" name="files" accept=" .pdf" />
+          <label for="cv"></label>
+          <input id="cv" type="file" name="cv" accept=" .pdf" />
           <br />
           <br />
-          <label for="photo" name="files"></label>
-          <input id="photo" type="file" name="files" accept=" .jpeg, .png" />
+          <label for="photo" ></label>
+          <input id="photo" type="file" name="photo" accept=" .jpeg, .png" />
           <br />
           <br />
           <br />
           <br />
-          <label for="rulesandtermsofuse" name="rulesandtermsofuse">
+          <label for="rulesandtermsofuse" >
             <a href=""> Qaydalar və İstifadə şərtləri</a> ilə tanış oldum,
             razıyam</label
           >
