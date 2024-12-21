@@ -3,19 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title> Qeydiyyat formu</title>
+    <title>Qeydiyyat formu</title>
     <style>
       .div1 {
-        background-color: rgb(180, 179, 179);
+        background-color: rgb(57, 112, 185);
         border: 1px solid;
         text-align: center;
         width: 500px;
         margin-left: auto;
         margin-right: auto;
+        color: white;
+        padding: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        border-radius: 10px;
       }
-      button {
-        margin-left: auto;
-        margin-right: auto;
+      .buttons {
+        background-color: rgb(43, 65, 84);
+        padding: 10px;
+        color: rgb(48, 47, 47);
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        border-color: rgb(164, 197, 225);
+        border-radius: 20px;
+        color: rgb(255, 255, 255);
+      }
+      .labels {
+        font-size: 20px;
+      }
+      .a {
+        color: white;
+      }
+      .inputs {
+        padding: 5px;
+        margin-top: 5px;
       }
     </style>
   </head>
@@ -29,8 +50,10 @@
           enctype="multipart/form-data"
           id="qeydiyyatformu"
         >
-          <label for="name" > Adınız </label>
+          <label class="labels" for="name"> Adınız </label>
+          <br />
           <input
+            class="inputs"
             id="name"
             type="text"
             name="name"
@@ -41,8 +64,10 @@
 
           <br /><br />
 
-          <label for="surname" > Soyadınız </label>
+          <label class="labels" for="surname"> Soyadınız </label>
+          <br />
           <input
+            class="inputs"
             id="surname"
             type="text"
             name="surname"
@@ -52,8 +77,10 @@
           />
           <br /><br />
 
-          <label for="age" > Yaşınız </label>
+          <label class="labels" for="age"> Yaşınız </label>
+          <br />
           <input
+            class="inputs"
             id="age"
             type="number"
             name="age"
@@ -64,8 +91,10 @@
           <br />
           <br />
           <br />
-          <label for="email" > Emailinizi daxil edin</label>
+          <label class="labels" for="email"> Emailinizi daxil edin</label>
+          <br />
           <input
+            class="inputs"
             id="email"
             type="email"
             name="email"
@@ -74,10 +103,10 @@
           />
           <br />
           <br />
-          <label for="password" >
-        Şifrə təyin edin</label
-          >
+          <label class="labels" for="password"> Şifrə təyin edin</label>
+          <br />
           <input
+            class="inputs"
             id="password"
             type="password"
             name="password"
@@ -89,42 +118,65 @@
           <br />
           <br />
           <br />
-          <label for="birth" > Doğum tarixinizi seçin</label>
-          <input id="birth" type="date" name="birth" />
+          <label class="labels" for="birth"> Doğum tarixinizi seçin</label>
+          <br />
+          <input class="inputs" id="birth" type="date" name="birth" />
           <br />
           <br />
-          <label for="gender" > Cinsiyyətinizi seçin</label>
+          <label class="labels" for="gender"> Cinsiyyətinizi seçin</label>
+
           <br />
           <br />
-          <label for="male" > Kişi</label>
-          <input id="male" type="radio" name="gender" value="1" required />
+          <label class="labels" for="male"> Kişi</label>
+          <input
+            class="inputs"
+            id="male"
+            type="radio"
+            name="gender"
+            value="1"
+            required
+          />
+
+          <label class="labels" for="female"> Qadın</label>
+          <input
+            class="inputs"
+            id="female"
+            type="radio"
+            name="gender"
+            value="2"
+            required
+          />
           <br />
-          <label for="female" > Qadın</label>
-          <input id="female" type="radio" name="gender" value="2" required />
           <br />
           <br />
           <br />
-          <br />
-          <label for="file" >
+          <label class="labels" for="file">
             CV (PDF formatında) və şəklinizi daxil edin</label
           >
           <br />
           <br />
-          <label for="cv"></label>
-          <input id="cv" type="file" name="cv" accept=" .pdf" />
+          <label class="labels" for="cv"></label>
+          <input class="inputs" id="cv" type="file" name="cv" accept=" .pdf" />
           <br />
           <br />
-          <label for="photo" ></label>
-          <input id="photo" type="file" name="photo" accept=" .jpeg, .png" />
+          <label class="labels" for="photo"></label>
+          <input
+            class="inputs"
+            id="photo"
+            type="file"
+            name="photo"
+            accept=" .jpeg, .png"
+          />
           <br />
           <br />
           <br />
           <br />
-          <label for="rulesandtermsofuse" >
-            <a href=""> Qaydalar və İstifadə şərtləri</a> ilə tanış oldum,
-            razıyam</label
+          <label class="labels" for="rulesandtermsofuse">
+            <a class="a" href=""> Qaydalar və İstifadə şərtləri</a> ilə tanış
+            oldum, razıyam</label
           >
           <input
+            class="inputs"
             id="rulesandtermsofuse"
             type="checkbox"
             name="rulesandtermsofuse"
@@ -135,8 +187,12 @@
       </div>
       <br /><br />
       <div>
-        <button type="submit" form="qeydiyyatformu">Göndər</button>
-        <button type="reset" form="qeydiyyatformu">Təmizlə</button>
+        <button class="buttons" type="submit" form="qeydiyyatformu">
+          Göndər
+        </button>
+        <button class="buttons" type="reset" form="qeydiyyatformu">
+          Təmizlə
+        </button>
       </div>
     </div>
   </body>
